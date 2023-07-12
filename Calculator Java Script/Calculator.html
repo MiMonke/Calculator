@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <title>
+
+    </title>
+    <body>
+        <h1 id="id_rez">
+        Aici va aparea raspunsul
+        </h1>
+       <p id="afisare_raspuns"></p>
+        <script>
+           let numarul1 = parseInt(prompt ("Introdu primul numar: " ));
+           let numarul2 = parseInt( prompt ("Introdu al noilea numar: "));
+
+           let operator = prompt ("Alege operatia dorita: ");
+
+           function afisare_zi()
+           {
+               
+
+           }
+           let rezultat;
+           function calculare(){
+                if (operator=='+')
+                {
+                    rezultat = numarul1+numarul2;
+                }
+                else if(operator=='-')
+                {
+                    rezultat = numarul1- numarul2;
+                }
+                else if(operator=='*')
+                {
+                    rezultat = numarul1* numarul2;
+                }
+                else
+                {
+                    rezultat = numarul1/numarul2;
+                }
+                document.getElementById('id_rez').innerHTML= rezultat;
+           }
+        </script>
+   
+    <button type="button" onclick=calculare()>
+        APASAAA pt rezultat
+    </button>
+</body>
+</html>
